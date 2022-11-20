@@ -1,0 +1,33 @@
+.containerCard{
+    width: 363px;
+    height: 96px;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card p {
+    color: #FD377E;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+.containerCard span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #343A40;
+    align-items: flex-start;
+}
+@media(max-width:700px){
+    .containerCard{
+        width: 93%;
+        margin: 0 auto;
+    }
+}

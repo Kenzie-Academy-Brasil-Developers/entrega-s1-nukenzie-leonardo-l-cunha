@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+.listContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.listHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    font-family: 'Nunito', sans-serif;
+}
+.boxBtns{
+    display: flex;
+    gap: 31px;
+    align-items: center;
+}
+.btnFilter{
+    background-color: #E9ECEF;;
+    border: 1.4px solid #E9ECEF;
+    border-radius: 8px;
+    padding: 15px;
+    color: #343A40;
+    cursor: pointer;
+}
+.btnFilter:focus{
+    background-color: #FD377E;
+    color: #fff;
+}
+
+.containerUl{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+.cardList{
+    width: 100%;
+    height: 87px;
+    background: #F8F9FA;
+    border-radius: 4px;
+    padding: 8px 18px;
+}
+.boxDescript{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+}
+.boxTrash{
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+.trash{
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url(/src/components/List/img/trash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2.46154px;
+    border: none;
+
+}
+.trash:hover{
+    opacity: 0.5;
+}
+.cardList p {
+    margin-top: 16px;
+}
+.greenn{
+    border-left: solid 4px #03B898 ;
+}
+.greyy{
+    border-left: solid 4px #E9ECEF;
+}
+.cardList:hover{
+    background-color: #fff;
+    border: solid 1px  #F8F9FA;;
+}
+.img{
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+}
+@media(max-width:700px){
+    .cardList{
+        width: 124%;
+        height: 100%;
+    }
+    .listHead{
+        width: 100%;
+    }
+    .boxBtns{
+        margin-left: 5px;
+        gap: 16px;
+    }
+}
+@media(max-width: 900px){
+    .cardList{
+        width: 119%;
+    }
+    .boxBtns{
+        gap: 4px;
+    }
+
+}
