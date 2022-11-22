@@ -45,7 +45,7 @@
     background: #F8F9FA;
     border-radius: 4px;
     padding: 8px 18px;
-    transition: 4s;
+    transition: 1s;
 }
 .boxDescript{
     display: flex;
@@ -106,7 +106,11 @@
 }
 @media(max-width: 900px){
     .cardList{
-        width: 119%;
+        width: 90%;
+        max-height: 87px;
+    }
+    .cardList h2 {
+        font-size: 16px;
     }
     .boxBtns{
         gap: 4px;
