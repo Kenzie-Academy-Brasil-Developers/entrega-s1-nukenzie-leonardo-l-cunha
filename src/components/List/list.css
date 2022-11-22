@@ -36,6 +36,8 @@
     width: 100%;
     list-style: none;
     font-family: 'Nunito', sans-serif;
+    height: 400px;
+    overflow-y: auto;
 }
 .cardList{
     width: 100%;
@@ -43,6 +45,7 @@
     background: #F8F9FA;
     border-radius: 4px;
     padding: 8px 18px;
+    transition: 4s;
 }
 .boxDescript{
     display: flex;

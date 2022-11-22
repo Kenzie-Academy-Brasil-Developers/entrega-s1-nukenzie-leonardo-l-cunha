@@ -21,8 +21,8 @@ function App() {
     setListTransactions([...listTransactions,newData])
   }
   function removeData(list){
-    const newData = listTransactions.filter((element) => {
-      return element.description !== list
+    const newData = listTransactions.filter((element,index) => {
+      return index !== list
       
     })
     setListTransactions(newData)

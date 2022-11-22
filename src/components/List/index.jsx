@@ -39,13 +39,15 @@ export const List = ({listTransactions,removeData,setFilter}) => {
                         </li>
                     ):(
                         listTransactions.map((element,index)=> {
+                            
                             return(
+                                
                                 <li key={index} className={element.type === "entrada" ? ("cardList greenn") : ("cardList greyy")}>
                                 <div className='boxDescript'>
                                     <h2>{element.description}</h2>
                                     <div className='boxTrash'>
                                         <span>{element.type === "saida" ? (<span> R$ - {element.value}</span>) : (<span> R$ {element.value}</span>)}</span>
-                                        <button onClick={()=> removeData(element.description)} className='trash'></button>
+                                        <button onClick={()=> removeData(index)} className='trash'></button>
                                     </div>
                                 </div>
                                 <p>{element.type}</p>
